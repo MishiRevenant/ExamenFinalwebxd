@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMart | Inicio</title>
+    <!-- Bootstrap CSS (agregado) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fuente y estilos propios -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pVI1H8+gY4tqXCNEZpWt1livUJP7x8EnY2pwwJ9RUe+IiQENu+3wunnnvxSnHN63uX1nl9QdP8zYgA8k6o5QKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- NAV BAR -->
+    <header>
+      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light px-4 w-100">
+        
+        <div class="container-fluid">
+           
+           <a href="index.html" class="logo">TechMart</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="categories.html">Categorías</a></li>
+              <li class="nav-item"><a class="nav-link" href="cart.html">Carrito</a></li>
+              <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+              <button id="theme-toggle" aria-label="Cambiar tema">🌙</button> 
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+ <!-- Carrusel Bootstrap insertado aquí -->
+<div id="carouselProductos" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselProductos" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselProductos" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselProductos" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/clusters/sale_autumn2019_assets/54b5034d397baccb93181cc6/home_header_bg_day_english.gif?t=1687217633" class="d-block w-100" alt="Smartphone moderno">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ofertas de Invierno</h5>
+                        <p>Disfrute de las ofertas que te ofrece este evento invernal</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.redd.it/f6wxdatim6oa1.gif" class="d-block w-100" alt="Laptop ultradelgada">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ofertas de Primavera</h5>
+                        <p>Nuestros ofertas florecen en la primavera.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.redd.it/t91i2pv5unad1.gif" class="d-block w-100" alt="Drone avanzado">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ofertas de Verano</h5>
+                        <p>Refrescate con estas nuevas ofertas .</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        <!-- FIN Carrusel -->
+    <main>
+
+      
+        
+        
+<h1 class="section-title">Novedades  <button class="toggle-btn" id="toggle-categorias" style="background:none;border:none;font-size:1rem;color:var(--color-accent);cursor:pointer;">
+    <span id="toggle-text">ver más ↓</span>
+  </button></h1>
+<section id="categorias-lista" class="masonry">
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&h=550&q=80" alt="Placa electrónica">
+                <div class="card-content">
+                    <h3>Placa electrónica</h3>
+                    <p class="price">S/ 199.00</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://m.media-amazon.com/images/I/61Nui6VITBL._AC_UF894,1000_QL80_.jpg" alt="Escritorio tecnológico">
+                <div class="card-content">
+                    <h3>Escritorio tecnológico</h3>
+                    <p class="price">S/ 224.00</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://blog.displate.com/wp-content/uploads/2022/03/Gaming-Setup-Ideas_Couple-Gaming-Setup-2.jpg" alt="Setup gaming">
+                <div class="card-content">
+                    <h3>Setup gaming</h3>
+                    <p class="price">S/ 1499.00</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://m.media-amazon.com/images/I/71aFrQk3miL._AC_UF894,1000_QL80_.jpg" alt="Drone avanzado">
+                <div class="card-content">
+                    <h3>Drone avanzado</h3>
+                    <p class="price">S/ 1749.00</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://m.media-amazon.com/images/I/71e5JUUOnUL._AC_SL500_.jpg" alt="Smartphone moderno">
+                <div class="card-content">
+                    <h3>Smartphone moderno</h3>
+                    <p class="price">S/ 1999.00</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&h=550&q=80" alt="Laptop ultradelgada">
+                <div class="card-content">
+                    <h3>Laptop ultradelgada</h3>
+                    <p class="price">S/ 5600.00</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://oechsle.vteximg.com.br/arquivos/ids/9275778/imageUrl_2.jpg?v=637913713772200000" alt="Auriculares premium">
+                <div class="card-content">
+                    <h3>Auriculares premium</h3>
+                    <p class="price">S/ 249.00</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://images-cdn.ubuy.co.in/6693847c28d56922e20c0049-yoolax-smart-plant-pot-for-indoor.jpg" alt="Dispositivo hogar inteligente">
+                <div class="card-content">
+                    <h3>Dispositivo hogar inteligente</h3>
+                    <p class="price">S/2 274.00</p>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- OFERTAS-->
+    <main>     
+<h1 class="section-title">Ofertas de temporada ❤️ <button class="toggle-btn" id="toggle-Smartphones" style="background:none;border:none;font-size:1rem;color:var(--color-accent);cursor:pointer;">
+    <span id="toggle-text">ver más ↓</span>
+  </button></h1>
+<section id="Smartphones-lista" class="masonry">
+
+            <article class="card">
+                <img src="https://hiraoka.com.pe/media/catalog/product/1/3/131771_1_2.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=560&width=700&canvas=700:560" alt="Placa electrónica">
+                <div class="card-content">
+                    <h3>Laptop Lenovo IdeaPad Slim 3i de 15.6"</h3>
+                    <p class="price">S/  1,399.00</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://hiraoka.com.pe/media/catalog/product/s/d/sd620_p_2000x20000_bl_02_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=560&width=700&canvas=700:560" alt="Escritorio tecnológico">
+                <div class="card-content">
+                    <h3>Almacenamiento Sólido Externo Adata SD620-512GCBL 512GB</h3>
+                    <p class="price">S/ 299.00</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://acdn-us.mitiendanube.com/stores/443/907/products/xiaomi14ultra0-e9535ebf1fa26c6b4617124388683490-1024-1024.jpg" alt="Setup gaming">
+                <div class="card-content">
+                    <h3>CELULAR XIAOMI 14 ULTRA 16/512GB</h3>
+                    <p class="price">S/ 1499.00</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://hiraoka.com.pe/media/catalog/product/1/3/132187.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=560&width=700&canvas=700:560">
+                <div class="card-content">
+                    <h3>Antivirus Eset Home Security Essential 6 Dispositivos</h3>
+                    <p class="price">S/  349.00</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://m.media-amazon.com/images/I/71xoR4A6q-L._AC_SL1000_.jpg">
+                <div class="card-content">
+                    <h3>Smart Speaker con Alexa y EU Power Adaptor</h3>
+                    <p class="price">S/ 980.00</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://hiraoka.com.pe/media/catalog/product/2/7/27ms500-product-images_infill_logo_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=560&width=700&canvas=700:560" alt="Laptop ultradelgada">
+                <div class="card-content">
+                    <h3>Monitor LG 27" IPS Full HD 27MS500-B</h3>
+                    <p class="price">S/  549.00   </p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/3102/PMP20000702883/full_image-1.jpeg" alt="Auriculares premium">
+                <div class="card-content">
+                    <h3>MONITOR TEROS TE-2415S NEGRO 23.8? IPS FHD 120HZ 1M</h3>
+                    <p class="price">S/  319.00</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://hiraoka.com.pe/media/catalog/product/p/i/pic_2024122514_1d4ba3609.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=560&width=700&canvas=700:560">
+                <div class="card-content">
+                    <h3>Dispositivo hogar inteligente</h3>
+                    <p class="price">S/  54.90</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglstjAz17iyrGzC0FdwB9GUoVoa1rdkTMuCqbfba-JVUtuVWlNs3NJctMGrMOCiyHPVyHvAoOm-54qWjpg7JqKAF-t-eo57bhvlgX9LQPu5yZDxt2N2coe8Z_HPncp9as0g-TzpMWek-K_lNIQB6tV0otdhSE1Cbh_ohQeXx9H9173lGmUbBysWfAGAQ/w640-h426/DSC_8046.JPG">
+                <div class="card-content">
+                    <h3> Kiwi Ears Cadenza</h3>
+                    <p class="price">S/  299.90</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://wondercris.com/cdn/shop/files/4b6a0276-5b7f-45ee-b6d5-acb61d8ab545.jpg?v=1719135382">
+                <div class="card-content">
+                    <h3>Dispositivo hogar inteligente</h3>
+                    <p class="price">S/  54.90</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://hiraoka.com.pe/media/catalog/product/p/i/pic_2024122514_1d4ba3609.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=560&width=700&canvas=700:560">
+                <div class="card-content">
+                    <h3>Teclado Mecánico Gamer Redragon Kumara K552 Rgb Tkl Sp.</h3>
+                    <p class="price">S/  249.90</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://cdn.memorykings.pe/files/2023/10/28/337558-MK031800A-1.jpg">
+                <div class="card-content">
+                    <h3>MOUSE Gaming RAZER BASILISK V3 PRO 35K RGB BLACK.</h3>
+                    <p class="price">S/  589,50</p>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+
+    <div>
+        <figure>
+            <img src="https://hiraoka.com.pe/media/wysiwyg/crono_129159_3.webp" class="imgPortada">
+        </figure>
+    </div>
+    <div>
+        <figure>
+            <img src="https://hiraoka.com.pe/media/wysiwyg/crono_doble_jbl_8.webp" class="imgPortada">
+        </figure>
+    </div>
+    <div>
+        <figure>
+            <img src="https://hiraoka.com.pe/media/wysiwyg/crono_doble_laptops_20.webp" class="imgPortada">
+        </figure>
+    </div>
+    <div>
+        <figure>
+            <img src="https://hiraoka.com.pe/media/wysiwyg/crono_130290_9.webp" class="imgPortada">
+        </figure>
+    </div>
+
+
+
+
+
+    <footer>
+        &copy; 2025 TechMart- José Manuel Ferro Monteagudo- Marco Antonio Quispe Sanchez- Nicolas Anderson Champi Palacios- Sandra Leticia Caceres Yucra
+    </footer>
+    <!-- Bootstrap JS (agregado al final) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
